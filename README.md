@@ -34,7 +34,14 @@
 
 ![Скриншот 2](https://github.com/Markin-AI/9-02/blob/main/img/2-2.png)
 
+Тут ошибки по подключению, так как в конфигурации агента не был отключен активный агент
+
 ![Скриншот 3](https://github.com/Markin-AI/9-02/blob/main/img/2-3.png)
+
+Тут заметил и отключил
+
+![Скриншот 5](https://github.com/Markin-AI/9-02/blob/main/img/2-5.png)
+
 
 ![Скриншот 4](https://github.com/Markin-AI/9-02/blob/main/img/2-4.png)
 
