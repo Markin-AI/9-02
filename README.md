@@ -9,11 +9,17 @@
 ![Скриншот 1](https://github.com/Markin-AI/9-02/blob/main/img/1-1.png)
 
  wget https://repo.zabbix.com/zabbix/7.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_7.0-2+ubuntu22.04_all.deb
+ 
  dpkg -i zabbix-release_7.0-2+ubuntu22.04_all.deb
+ 
  apt update
+ 
  apt install zabbix-server-pgsql zabbix-frontend-php php8.1-pgsql zabbix-apache-conf zabbix-sql-scripts
+ 
  sudo -u postgres createuser --pwprompt zabbix
+ 
  sudo -u postgres createdb -O zabbix zabbix
+ 
  zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
 
 ---
@@ -33,7 +39,9 @@
 ![Скриншот 4](https://github.com/Markin-AI/9-02/blob/main/img/2-4.png)
 
  apt install zabbix-agent
+ 
  systemctl enable zabbix-agent
+ 
  systemctl restart zabbix-agent
 
 ---
